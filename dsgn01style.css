@@ -1,0 +1,202 @@
+/* DESIGN.HTML*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+@font-face{
+    src: url(fonts/VanguardCF-Bold.otf);
+    font-family: vangrd;
+}
+@font-face{
+    src: url(fonts/Gilroy-Light.otf);
+    font-family: gilroy;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#navbar{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    z-index: 100;
+}
+#left{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(39,39,39);
+    color: white;
+}
+#text{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    font-family: vangrd;
+    font-size: 80px;
+    line-height: 135px;
+    z-index: 99;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s;
+}
+#text:hover{
+    -webkit-text-stroke: 3px white ;
+    color: transparent;
+    cursor: pointer;
+}
+#text01{
+    padding: 40px;
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+    width: 100%;
+    height: 30%;   
+    line-height: 50px;
+    font-weight: lighter;
+}
+#text01 h3{
+    color: rgb(66, 65, 65);
+    font-size: 20px;
+    font-family: vangrd;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+#text01 #a{
+    font-size: 60px;
+    font-family: vangrd;
+    text-transform: uppercase;
+}
+#text01 #b{
+    font-size: 60px;
+    font-family: vangrd;
+    text-transform: uppercase;
+}
+#line{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 8%;
+    border-top: 1px solid rgba(255, 255, 255, 0.274);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.274);
+    z-index: 99;
+}
+#line h5{
+    color: rgba(255, 255, 255, 0.459);  
+    position: absolute;
+    top: 50%;
+    font-family: gilroy;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+#line #a{
+    color: rgba(255, 255, 255, 0.459);
+    left: 10%;
+    transform: translate(-50%,-50%);
+    font-weight: lighter;    
+}
+#line #b{
+    color: rgba(105, 105, 105, 0.616);
+    transform: translate(0%,-50%);
+    right: 5%;
+    font-weight: bolder;
+}
+#line #c{
+    color: rgba(255, 255, 255, 0.459);
+    font-size: 15px;
+    font-weight: lighter;
+    left: 18%;
+    transform: translate(-50%,-50%);
+}
+#center{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: bottom;
+}
+#textbtm{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+}
+#textbtm h1{
+    font-family: vangrd;
+    font-size: 90px;
+}
+#textbtm:hover{
+    -webkit-text-stroke: 3px rgb(254,200,102);
+    color: transparent;
+}
+#textbtm h2{
+    position: absolute;
+    left: -22%;
+    top: -40%;
+    font-size: 50px;
+    font-family: vangrd;
+}
+#circle{
+    position: absolute;
+    top: 27%;
+    left: 65%;
+    width: 15%;
+    height: 28%;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    z-index: 99;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s;
+}
+#circle h6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgba(255, 255, 255, 0.562);
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+#circle:hover{
+    background-color: rgba(89, 151, 170, 0.418);
+    color: black;
+    cursor: pointer;
+}
+#right{
+    width: 20%;
+    height: 100%;
+}
+#rtop{
+    width: 100%;
+    height: 75%;
+    background-image: url(https://images.unsplash.com/photo-1505628346881-b72b27e84530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+}
+#rbtm{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(143, 143, 143, 0.788);;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s;
+}
+#rbtm h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 85px;
+    font-family: vangrd;
+}
+#rbtm:hover{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
