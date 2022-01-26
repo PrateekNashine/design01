@@ -9,11 +9,11 @@ html,body{
     height: 100%;
 }
 @font-face{
-    src: url(fonts/VanguardCF-Bold.otf);
+    src: url(../fonts/VanguardCF-Bold.otf);
     font-family: vangrd;
 }
 @font-face{
-    src: url(fonts/Gilroy-Light.otf);
+    src: url(../fonts/Gilroy-Light.otf);
     font-family: gilroy;
 }
 #main{
@@ -62,7 +62,7 @@ html,body{
 #text01 h3{
     color: rgb(66, 65, 65);
     font-size: 20px;
-    font-family: vangrd;
+    font-family: vangr;
     text-transform: uppercase;
     font-weight: 100;
 }
